@@ -28,6 +28,7 @@ public class TaskStepDef {
     public void user_is_logged_in() throws Exception{
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         logIn.loginUsername.sendKeys(ConfigurationReader.getProperty("username"));
+        Thread.sleep(2000);
         logIn.loginPassword.sendKeys(ConfigurationReader.getProperty("password"), Keys.ENTER);
         Thread.sleep(2000);
     }
@@ -94,7 +95,7 @@ public class TaskStepDef {
 Thread.sleep(4000);
 
         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
-        executor.executeScript("arguments[0].click();", task.uploadPicturesFiles.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-22 at 9.24.52 PM.png");
+        //executor.executeScript("arguments[0].click();", task.uploadPicturesFiles.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-22 at 9.24.52 PM.png");
         Thread.sleep(2000);
     //task.uploadPicturesFiles.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-22 at 9.24.52 PM.png");
 
@@ -333,6 +334,7 @@ task.addMoreButton.click();
     }
     @Then("verify if the assigned Task is created")
     public void verify_if_the_assigned_task_is_created() {
+
 
     }
 

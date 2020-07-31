@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
+        "line": 6,
         "name": "User is on bitrix page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6553000000,
+              "duration": 7636000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User is logged in",
             "match": {
               "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
@@ -23,303 +23,24 @@
           },
           {
             "result": {
-              "duration": 2063000000,
+              "duration": 3071000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "click on Task Module",
+            "line": 8,
+            "name": "user click on Poll Tab",
             "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
+              "location": "com.Bytrix.Step_Definitions.MyStepdefs.userClickOnPollTab()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-29T23:38:19.170Z",
-        "line": 10,
-        "name": "User should be able to click on \"\"High Priority\"\" checkbox to set the current task to a top priority task.",
+        "start_timestamp": "2020-07-31T17:57:03.979Z",
+        "line": 34,
+        "name": "5.User should be able to create a quote by clicking on the Comma icon.",
         "description": "",
-        "id": "create-events;user-should-be-able-to-click-on-\"\"high-priority\"\"-checkbox-to-set-the-current-task-to-a-top-priority-task.",
-        "after": [
-          {
-            "result": {
-              "duration": 114000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 68000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "click on High Priority checkbox",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_high_priority_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "set the current task  to a top Priority task",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.set_the_current_task_to_a_top_priority_task()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6015000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2070000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:38:28.072Z",
-        "line": 15,
-        "name": "User should be able to click on Visual Editor and see the editor text-bar displays on top of the message box.",
-        "description": "",
-        "id": "create-events;user-should-be-able-to-click-on-visual-editor-and-see-the-editor-text-bar-displays-on-top-of-the-message-box.",
-        "after": [
-          {
-            "result": {
-              "duration": 114000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 81000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "click on Visual Editor",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_visual_editor()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4051000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "verify if it\u0027s showed up",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIfItSShowedUp()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6078000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2059000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:38:40.419Z",
-        "line": 19,
-        "name": "User should be able to click on upload files icon to upload files and pictures from local disks, download from external drive, select documents from bixtrix24, and create files to upload.",
-        "description": "",
-        "id": "create-events;user-should-be-able-to-click-on-upload-files-icon-to-upload-files-and-pictures-from-local-disks--download-from-external-drive--select-documents-from-bixtrix24--and-create-files-to-upload.",
-        "after": [
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4088000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "click on upload files icon",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_upload_files_icon()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4082000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Upload files and picture",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.upload_files_and_picture()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Select documents from bitrix",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.select_documents_from_bitrix()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.Bytrix.Step_Definitions.TaskStepDef.create_file_to_upload(TaskStepDef.java:107)\n\tat ✽.create file to upload(file:///Users/marionelatirsina/IdeaProjects/bitrixProject/src/test/resources/Features/createEvents.feature:23)\n",
-              "duration": 3000000,
-              "status": "pending"
-            },
-            "line": 23,
-            "name": "create file to upload",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.create_file_to_upload()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          },
-          {
-            "name": "@actual"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5925000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2075000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:38:56.854Z",
-        "line": 28,
-        "name": "User should be able to create a quote by clicking on the Comma icon.",
-        "description": "",
-        "id": "create-events;user-should-be-able-to-create-a-quote-by-clicking-on-the-comma-icon.",
+        "id": "poll-tab;5.user-should-be-able-to-create-a-quote-by-clicking-on-the-comma-icon.",
         "after": [
           {
             "result": {
@@ -336,660 +57,71 @@
         "steps": [
           {
             "result": {
-              "duration": 4077000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Click on Comma Icon",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_comma_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6106000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Create a quote",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.create_a_quote()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3026000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "verify if it\u0027s displayed",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIfItSDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6018000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2075000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:39:18.198Z",
-        "line": 33,
-        "name": "User should be able to add mention by clicking on the Add mention icon and select contacts from the lists provided in dropdown.",
-        "description": "",
-        "id": "create-events;user-should-be-able-to-add-mention-by-clicking-on-the-add-mention-icon-and-select-contacts-from-the-lists-provided-in-dropdown.",
-        "after": [
-          {
-            "result": {
-              "duration": 111000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7081000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "Click on the Add mention icon",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_the_add_mention_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9176000000,
+              "duration": 5139000000,
               "status": "passed"
             },
             "line": 35,
-            "name": "select contacts from the lists  provided in dropdown",
+            "name": "click on Comma Button from the POLL Tab",
             "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.select_contacts_from_the_lists_provided_in_dropdown()"
+              "location": "com.Bytrix.Step_Definitions.MyStepdefs.clickOnCommaButtonFromThePOLLTab()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3070000000,
+              "duration": 9164000000,
               "status": "passed"
             },
             "line": 36,
-            "name": "Verify if the addMention emails are added.",
+            "name": "click on Quote Tab and write a quote \"Today it\u0027s friday so we have Retro Meeting\"",
             "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIfTheAddMentionEmailsAreAdded()"
+              "arguments": [
+                {
+                  "val": "\"Today it\u0027s friday so we have Retro Meeting\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.Bytrix.Step_Definitions.MyStepdefs.clickOnQuoteTabAndWriteAQuote(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3077000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "click on Send Button",
+            "match": {
+              "location": "com.Bytrix.Step_Definitions.MyStepdefs.clickOnSendButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Verify if the Quote is displayed on the page",
+            "match": {
+              "location": "com.Bytrix.Step_Definitions.MyStepdefs.verifyIfTheQuoteIsDisplayedOnThePage()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5886000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2073000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:39:45.738Z",
-        "line": 38,
-        "name": "User should be able to attach link by clicking on the link icon.",
-        "description": "",
-        "id": "create-events;user-should-be-able-to-attach-link-by-clicking-on-the-link-icon.",
-        "after": [
-          {
-            "result": {
-              "duration": 122000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3088000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "click on the link icon",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_the_link_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14269000000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "atach link",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.atach_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 66000000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "verify is the link it\u0027s uploaded",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIsTheLinkItSUploaded()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5971000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2063000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:40:11.248Z",
-        "line": 43,
-        "name": "User can assign the tasks to employees by clicking on Add More and selecting contact from E-mail user, Employees and Departments and Recent contact lists.",
-        "description": "",
-        "id": "create-events;user-can-assign-the-tasks-to-employees-by-clicking-on-add-more-and-selecting-contact-from-e-mail-user--employees-and-departments-and-recent-contact-lists.",
-        "after": [
-          {
-            "result": {
-              "duration": 112000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3078000000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "click on Add More",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_add_more()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15276000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "select contact from E-mail User, Employees and Departments  and Recent Contact List",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.select_contact_from_e_mail_user_employees_and_departments_and_recent_contact_list()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "verify if Add More selecting contact from  E-mail user, Employees and Departments and Recent contact lists works.",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIfAddMoreSelectingContactFromEMailUserEmployeesAndDepartmentsAndRecentContactListsWorks()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6088000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2067000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:40:37.795Z",
-        "line": 49,
-        "name": "Employees can be added in different assignment categories: Created By, Participants and Observer.",
-        "description": "",
-        "id": "create-events;employees-can-be-added-in-different-assignment-categories:-created-by--participants-and-observer.",
-        "after": [
-          {
-            "result": {
-              "duration": 132000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3062000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "click on created by",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnCreatedBy()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12301000000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "click participants  and people",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickParticipantsAndPeople()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9263000000,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "click  on  Observers and add people",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnObserversAndAddPeople()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8121000000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "verify if Employees can be added in different assignment categories: Created By, Participants and Observer.",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIfEmployeesCanBeAddedInDifferentAssignmentCategoriesCreatedByParticipantsAndObserver()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6047000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2070000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:41:18.838Z",
-        "line": 55,
-        "name": "User can add Deadline, Time Planning by using date pickers.",
-        "description": "",
-        "id": "create-events;user-can-add-deadline--time-planning-by-using-date-pickers.",
-        "after": [
-          {
-            "result": {
-              "duration": 110000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6087000000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "Click on Deadline",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_deadline()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5241000000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "select date and time",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.select_date_and_time()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 19000000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "verify is the Deadline is saved",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verifyIsTheDeadlineIsSaved()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on bitrix page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5975000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is logged in",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2057000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "click on Task Module",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.clickOnTaskModule()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-29T23:41:38.420Z",
-        "line": 60,
-        "name": "User can click on More to specify the task details.\"",
-        "description": "",
-        "id": "create-events;user-can-click-on-more-to-specify-the-task-details.\"",
-        "after": [
-          {
-            "result": {
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6082000000,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "Click on More",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_more()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "specify the task details",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.specify_the_task_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "Click on Send",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.click_on_send()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "verify if the assigned Task is created",
-            "match": {
-              "location": "com.Bytrix.Step_Definitions.TaskStepDef.verify_if_the_assigned_task_is_created()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@s1"
+            "name": "@aaa"
           }
         ]
       }
     ],
-    "name": "Create Events",
-    "description": "User Story: As a user, I should be able to assign\n  tasks by clicking on Task tab under Active Stream.",
-    "id": "create-events",
+    "name": "Poll tab",
+    "description": "As a user, I should be able to create a\npoll by clicking on Poll tab under Active Stream.",
+    "id": "poll-tab",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/createEvents.feature",
-    "tags": [
-      {
-        "name": "@s1",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/Features/ApreciationMoreModule.feature",
+    "tags": []
   }
 ]
