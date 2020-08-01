@@ -82,6 +82,8 @@ public class TaskStepDef {
 
     @Then("click on upload files icon")
     public void click_on_upload_files_icon() throws Exception{
+        Thread.sleep(3000);
+        task.taskName.sendKeys("Screenshot from the last error!");
         Thread.sleep(4000);
         task.uploadButton.click();
 
@@ -92,22 +94,44 @@ public class TaskStepDef {
     @And ("Upload files and picture")
     public void upload_files_and_picture() throws Exception {
 
-Thread.sleep(4000);
+Thread.sleep(2000);
 
-        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
-        //executor.executeScript("arguments[0].click();", task.uploadPicturesFiles.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-22 at 9.24.52 PM.png");
-        Thread.sleep(2000);
-    //task.uploadPicturesFiles.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-22 at 9.24.52 PM.png");
+     task.uploadPicture.sendKeys("/Users/marionelatirsina/Desktop/Screen Shot 2020-07-17 at 3.29.41 PM.png");
+     Thread.sleep(3000);
+     task.sendButton.click();
+     Thread.sleep(5000);
+    }
+    @Then("Verify if picture it's uploaded")
+    public void verifyIfPictureItSUploaded() {
 
     }
+//select document from bitrix
+
+    @And("Click on Select Document from Bitrix")
+    public void clickOnSelectDocumentFromBitrix() throws Exception{
+        Thread.sleep(3000);
+task.selectDocumentFromBitrix.click();
+Thread.sleep(3000);
+    }
+
+
     @And ("Select documents from bitrix")
-    public void select_documents_from_bitrix() {
+    public void select_documents_from_bitrix() throws Exception {
+        Thread.sleep(3000);
+  task.selectFirstDocument.click();
+  Thread.sleep(3000);
+        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+        executor.executeScript("arguments[0].click();",task.selectDocumentSubmitButton);
+        Thread.sleep(2000);
+
+  Thread.sleep(3000);
+  task.sendButton.click();
+  Thread.sleep(5000);
 
     }
-    @Then("create file to upload")
-    public void create_file_to_upload() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("verify if the document  it's uploaded")
+    public void verifyIfTheDocumentItSUploaded() {
+     Assert.assertTrue(   task.selectDocumentVerification.isDisplayed());
     }
 
 
@@ -337,6 +361,11 @@ task.addMoreButton.click();
 
 
     }
+    @Then("create file to upload")
+    public void create_file_to_upload() {
+
+    }
+
 
 
 

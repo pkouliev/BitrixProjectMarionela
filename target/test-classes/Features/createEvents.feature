@@ -15,12 +15,20 @@ Background: User is on bitrix page
   Scenario:2. User should be able to click on Visual Editor and see the editor text-bar displays on top of the message box.
     And click on Visual Editor
     Then verify if it's showed up
-@actual
+@picture
+  @task
   Scenario:3. User should be able to click on upload files icon to upload files and pictures from local disks, download from external drive, select documents from bixtrix24, and create files to upload.
    Then click on upload files icon
    Then  Upload files and picture
-   Then Select documents from bitrix
-   Then create file to upload
+  Then Verify if picture it's uploaded
+  @mmm
+  Scenario:3.1 Select documents from bitrix
+    Then click on upload files icon
+   And  Click on Select Document from Bitrix
+   And  Select documents from bitrix
+   And  create file to upload
+    Then  verify if the document  it's uploaded
+
 
 
 
