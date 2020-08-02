@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
             features = "src/test/resources/Features",
             glue = "com/Bytrix/Step_Definitions",
             dryRun = false,
-            tags = "@mmm"
+            tags = "@aaa"
 
 
 

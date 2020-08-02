@@ -52,4 +52,38 @@ public WebElement answer3;
     @FindBy(xpath = "(//div[@class='feed-post-text-block-inner-inner'])[1]")
     public WebElement verificationQuote;
 
+    //link
+    @FindBy(xpath = "//span[@class='bxhtmled-top-bar-btn bxhtmled-button-link']")
+    public WebElement linkButton;
+    @FindBy(xpath = "//input[@type='text' and @placeholder='Link text']")
+    public WebElement textLinkForm;
+    @FindBy(xpath = "//input[@type='text' and @placeholder='Link URL']")
+    public WebElement linkForm;
+    @FindBy(className = "adm-btn-save")
+    public WebElement saveLinkButton;
+
+    @FindBy(xpath = "//div[@class='feed-post-cont-wrap sonet-log-item-createdby-503 sonet-log-item-where-U-503-all sonet-log-item-where-U-503-blog-post sonet-log-item-where-U-503-blog']")
+    public WebElement verificationLink;
+    @FindBy(xpath = "//span[@id='lhe_button_editor_blogPostForm']")
+    public WebElement visualEditorButton;
+    @FindBy(id="bx-html-editor-tlbr-idPostFormLHE_blogPostForm")
+    public WebElement verificationVisualEditor;
+
+    @FindBy(xpath = "//span[@title='Topic']")
+    public WebElement topicButton;
+    @FindBy(xpath = "//div[@class='feed-add-post-title']")
+    public WebElement verificationTopicButton;
+
+
+    @FindBy(xpath = "(//span[@class='feed-add-post-form-but-cnt feed-add-videomessage'])[1]")
+    public WebElement recordVideo;
+    @FindBy(xpath = "//span[@class='popup-window-button popup-window-button-blue']")
+    public WebElement allowCameraConfirmation;
+    @FindBy(xpath = "//div[@id='popup-window-content-bx-popup-videomessage-popup']")
+    public WebElement errorVideoConfirmation;
+    @FindBy(xpath = "//span[@class='popup-window-button popup-window-button-blue']")
+    public WebElement closeErrorVideoConfirmation;
+
+
+
 }

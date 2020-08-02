@@ -3,15 +3,20 @@ package com.Bytrix.Step_Definitions;
 import com.Bytrix.Pages.Poll;
 import com.Bytrix.Utilities.Driver;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import sun.lwawt.macosx.CThreading;
 
 import java.awt.dnd.DragGestureEvent;
+import java.util.Set;
 
 public class MyStepdefs {
 
@@ -187,5 +192,101 @@ public void writeSomeMessageForTheVideoDescriptionInPollTab() throws Exception {
     @Then("Verify if the Quote is displayed on the page")
     public void verifyIfTheQuoteIsDisplayedOnThePage() {
         Assert.assertTrue(poll.verificationQuote.isDisplayed());
+    }
+    //link button
+    @And("click on Link Button from Poll Tab")
+    public void clickOnLinkButtonFromPollTab()throws Exception {
+        Thread.sleep(3000);
+        poll.linkButton.click();
+
+    }
+
+    @And("click and write some Text in Text Form")
+    public void clickAndWriteSomeTextInTextForm()
+    throws Exception{
+        Thread.sleep(3000);
+        poll.textLinkForm.sendKeys("Here Link for the inspirational day");
+    }
+
+    @And("upload the link in the link Form, and click on Save Button")
+    public void uploadTheLinkInTheLinkFormAndClickOnSaveButton() throws Exception {
+        poll.linkForm.sendKeys("https://www.youtube.com/watch?v=q7ij-JNCNwg");
+        Thread.sleep(3000);
+        poll.saveLinkButton.click();
+        Thread.sleep(3000);
+        poll.sendButton.click();
+        Thread.sleep(3000);
+    }
+
+    @Then("Verify if click it's uploaded")
+    public void verifyIfClickItSUploaded() throws Exception{
+        Thread.sleep(3000);
+Assert.assertTrue(poll.verificationLink.isDisplayed());
+
+    }
+
+    //visual Editor
+    @Given("click on Visual Editor from the poll")
+    public void click_on_visual_editor_from_the_poll() throws Exception {
+        Thread.sleep(3000);
+        poll.visualEditorButton.click();
+
+    }
+
+
+
+
+    @Then("verify if it's displayed the Visual Editor")
+    public void verify_if_it_s_displayed_the_visual_editor() throws Exception {
+        Thread.sleep(3000);
+        Assert.assertTrue(poll.verificationVisualEditor.isDisplayed());
+
+    }
+
+//Topic Icon
+    @And("click on Topic Icon from Poll")
+    public void clickOnTopicIconFromPoll() throws Exception{
+        Thread.sleep(3000);
+
+
+        Actions actions=new Actions(Driver.getDriver());
+        actions.moveToElement(poll.topicButton).click().perform();
+
+
+    }
+
+    @Then("Verify if Topic text box id displayed on top of the message box.")
+    public void verifyIfTopicTextBoxIdDisplayedOnTopOfTheMessageBox() throws Exception{
+        Thread.sleep(5000);
+     Assert.assertTrue(   poll.verificationTopicButton.isDisplayed());
+    }
+
+    @And("click on Record Video Button from Poll")
+    public void clickOnRecordVideoButtonFromPoll() throws Exception {
+        Thread.sleep(3000);
+        poll.recordVideo.click();
+        Thread.sleep(3000);
+        poll.allowCameraConfirmation.click();
+        Thread.sleep(3000);
+        String id=Driver.getDriver().getWindowHandle();
+        Set<String> list=Driver.getDriver().getWindowHandles();
+        System.out.println(list.size());
+        Thread.sleep(3000);
+        Driver.getDriver().switchTo().window(list.iterator().next());
+        Thread.sleep(3000);
+       Driver.getDriver().switchTo().alert().accept();
+      //  Driver.getDriver().switchTo().alert().dismiss();
+
+        Thread.sleep(5000);
+
+    }
+
+    @Then("Verify if its recording the Video and uploading")
+    public void verifyIfItsRecordingTheVideoAndUploading() throws Exception{
+        Thread.sleep(3000);
+        poll.errorVideoConfirmation.getText();
+        Thread.sleep(3000);
+        poll.closeErrorVideoConfirmation.click();
+
     }
 }

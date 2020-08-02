@@ -351,24 +351,5 @@ task.addMoreButton.click();
     public void specify_the_task_details() {
         //task Planned time
 
-    }
-    @Given("Click on Send")
-    public void click_on_send() {
-
-    }
-    @Then("verify if the assigned Task is created")
-    public void verify_if_the_assigned_task_is_created() {
-
-
-    }
-    @Then("create file to upload")
-    public void create_file_to_upload() {
-
-    }
-
-
-
-
-}
-
+    }}
 
