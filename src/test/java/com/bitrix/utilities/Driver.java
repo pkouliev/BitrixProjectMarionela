@@ -7,6 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Driver {
     //1-Make constructor private
     private Driver() {
@@ -21,8 +24,12 @@ public class Driver {
 
             switch (browser) {
                 case "chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    Map<String, Object> prefs = new HashMap<String, Object>();
+                    prefs.put("download.prompt_for_download", false);
+                    options.setExperimentalOption("prefs", prefs);
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
