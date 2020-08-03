@@ -1,5 +1,6 @@
 package com.Bytrix.Pages;
 
+import com.Bytrix.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.support.FindBy;
@@ -27,8 +28,8 @@ public class Task extends BasePage {
 
     @FindBy(xpath = "(//span[@id='bx-b-uploadfile-task-form-lifefeed_task_form'])")
  public WebElement uploadButton;
-    @FindBy(xpath = "(.//input[@type='file'])[5]")
- public WebElement uploadPicturesFiles;
+    @FindBy(xpath = "(//input[@class='diskuf-fileUploader wd-test-file-light-inp diskuf-filemacos'])[1]")
+    public  WebElement uploadPicture;
     @FindBy(xpath = "(//span[@class='bxhtmled-top-bar-wrap'])[1]")
  public WebElement  editorVerification;
 
@@ -113,5 +114,22 @@ public class Task extends BasePage {
     public WebElement taskPlannedTime;
 @FindBy(xpath = "//input[@class='js-id-timeestimate-time js-id-timeestimate-hour task-options-inp']")
     public WebElement planedTimeHours;
+
+@FindBy(xpath = "(//button[@class='ui-btn ui-btn-lg ui-btn-primary'])[1]")
+    public WebElement sendButton;
+
+
+@FindBy(name = "ACTION[0][ARGUMENTS][data][TITLE]")
+    public WebElement taskName;
+
+@FindBy(xpath = "(//span[@class='wd-fa-add-file-light-title-text diskuf-selector-link' and text()='Select document from Bitrix24'])[5]")
+    public WebElement selectDocumentFromBitrix;
+
+@FindBy(xpath = "(//a[@class='bx-file-dialog-content-link bx-file-dialog-icon bx-file-dialog-icon-file'])[1]")
+    public WebElement selectFirstDocument;
+@FindBy(xpath = "//span[.='Select document']")
+    public WebElement selectDocumentSubmitButton;
+@FindBy(xpath = "//span[@class='popup-window-button' and text()='View task']")
+    public WebElement  selectDocumentVerification;
 
 }
